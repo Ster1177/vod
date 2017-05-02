@@ -38,7 +38,7 @@ class signup extends CI_Controller
 			if ($this->user_model->insert_user($data))
 			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center">You are Successfully Registered! Please login to access your Profile!</div>');
-				redirect('signup/index');
+				redirect('login/index');
 			}
 			else
 			{

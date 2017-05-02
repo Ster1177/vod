@@ -4,10 +4,10 @@ class login extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->helper(array('form','url','html'));
-		$this->load->library(array('session', 'form_validation'));
-		$this->load->database();
-		$this->load->model('user_model');
+		//$this->load->helper(array('form','url','html'));
+		//$this->load->library(array('session', 'form_validation'));
+		//$this->load->database();
+		//$this->load->model('user_model');
 	}
     public function index()
     {
@@ -33,7 +33,7 @@ class login extends CI_Controller
 				// set session
 				$sess_data = array('login' => TRUE, 'uname' => $uresult[0]->fname, 'uid' => $uresult[0]->id);
 				$this->session->set_userdata($sess_data);
-				redirect("profile/index");
+				redirect("home/view");
 			}
 			else
 			{

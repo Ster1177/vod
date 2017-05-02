@@ -7,7 +7,7 @@
 					</div>
 					<div class="col-md-4 resent-grid recommended-grid slider-top-grids">
 						<div class="resent-grid-img recommended-grid-img">
-							<a href="single.html"><img src="images/t1.jpg" alt="" /></a>
+							<a href="<?php echo base_url(); ?>/index.php/single/view"><img src="<?php echo base_url(); ?>images/t1.jpg" alt="" /></a>
 							<div class="time">
 								<p>3:04</p>
 							</div>
@@ -25,7 +25,7 @@
 					</div>
 					<div class="col-md-4 resent-grid recommended-grid slider-top-grids">
 						<div class="resent-grid-img recommended-grid-img">
-							<a href="single.html"><img src="images/t2.jpg" alt="" /></a>
+							<a href="<?php echo base_url(); ?>/index.php/single/view"> <img src="<?php echo base_url(); ?>images/t2.jpg" alt="" /></a>
 							<div class="time">
 								<p>7:23</p>
 							</div>
@@ -43,7 +43,7 @@
 					</div>
 					<div class="col-md-4 resent-grid recommended-grid slider-top-grids">
 						<div class="resent-grid-img recommended-grid-img">
-							<a href="single.html"><img src="images/t3.jpg" alt="" /></a>
+							<a href="single.html"><img src="<?php echo base_url(); ?>images/t3.jpg" alt="" /></a>
 							<div class="time">
 								<p>4:04</p>
 							</div>
@@ -488,7 +488,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r1.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r1.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>2:34</p>
 								</div>
@@ -506,7 +506,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r2.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r2.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>3:02</p>
 								</div>
@@ -524,7 +524,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r3.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r3.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>1:34</p>
 								</div>
@@ -542,7 +542,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="single.html"><img src="images<?php echo base_url(); ?>/r4.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>2:09</p>
 								</div>
@@ -563,7 +563,7 @@
 					<div class="recommended-grids">
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r4.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>6:34</p>
 								</div>
@@ -581,7 +581,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r5.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r5.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>7:34</p>
 								</div>
@@ -599,7 +599,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r6.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r6.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>6:09</p>
 								</div>
@@ -617,7 +617,7 @@
 						</div>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="images/r1.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo base_url(); ?>images/r1.jpg" alt="" /></a>
 								<div class="time small-time">
 									<p>9:04</p>
 								</div>

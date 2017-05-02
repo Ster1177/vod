@@ -32,7 +32,7 @@
 			<hr/>
 			<p>Name: <?php echo $uname; ?></p>
 			<p>Email: <?php echo $uemail; ?></p>
-			<p>...</p>
+			<p><h5 class="navbar-text"> _URL:  <?php echo base_url(uri_string()); ?></h5></p>
 		</div>
 		<div class="col-md-8">
 			<p>lorem ipsum dolum</p>

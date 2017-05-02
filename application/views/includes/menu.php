@@ -1,3 +1,5 @@
+<?php $username = $this->session->userdata('uname'); ?>
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -8,7 +10,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><h1><img src="images/logo2.png" height="49" width="153" /></h1></a>
+          <a class="navbar-brand" href="index.html"><h1><img src="<?php echo base_url(); ?>images/logo2.png" height="49" width="153" /></h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="top-search">
@@ -20,11 +22,17 @@
 			<div class="header-top-right">
 				
 				<div class="signin">
-					<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">Sign Up</a>
+  					  <?php if (isset($username)){ ?>
+  					  		<h5 class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></h5>
+  					  <?php } else { ?>
+							<a href="<?php echo base_url(); ?>/index.php/signup/index" class="">Sign Up</a>
+					  <?php } ?>
+
+					
 					<!-- pop-up-box -->
-									<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
-									<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-									<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+									<script type="text/javascript" src="<?php echo base_url(); ?>js/modernizr.custom.min.js"></script>    
+									<link href="<?php echo base_url(); ?>css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+									<script src="<?php echo base_url(); ?>js/jquery.magnific-popup.js" type="text/javascript"></script>
 									<!--//pop-up-box -->
 									<div id="small-dialog2" class="mfp-hide">
 										<h3>Create Account</h3> 
@@ -163,7 +171,12 @@
 									</script>	
 				</div>
 				<div class="signin">
-					<a href="<?php echo site_url('login/index'); ?>" class="play-icon popup-with-zoom-anim">Sign In</a>
+
+					<?php if (isset($username)){ ?>
+						<a href="<?php echo base_url(); ?>/index.php/profile/logout" class="">Logout</a>
+  					  <?php } else { ?>
+  					  <a href="<?php echo base_url(); ?>/index.php/login/index" class="">login</a>
+					  <?php } ?>
 					
 					<div id="small-dialog" class="mfp-hide">
 						<h3>Login</h3>
@@ -202,7 +215,7 @@
 			<div class="top-navigation">
 				<div class="t-menu">MENU</div>
 				<div class="t-img">
-					<img src="images/lines.png" alt="" />
+					<img src="<?php echo base_url(); ?>images/lines.png" alt="" />
 				</div>
 				<div class="clearfix"> </div>
 			</div>

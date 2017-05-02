@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><h1><img src="<?php echo base_url(); ?>images/logo2.png" height="49" width="153" /></h1></a>
+          <a class="navbar-brand" href="index.html"><h1><img src="images/logo2.png" height="49" width="153" /></h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="top-search">
@@ -251,7 +251,7 @@
 					</div>
 						<div class="video-grid">
 							<!--<iframe src="https://www.youtube.com/embed/oYiT-vLjhC4" allowfullscreen></iframe> -->
-							<iframe src="<?php echo base_url();?>videos/2017 Bathurst 12 Hour - Improved Production - Race 2.mp4" allowfullscreen></iframe>
+							<iframe src="<?php echo base_url();?>videos/test.mp4" allowfullscreen></iframe>
 							<!--<video controls>
   								<source src="videos/test.mp4" type="video/mp4">
   								Your browser does not support the video tag.
