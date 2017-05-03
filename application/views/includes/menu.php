@@ -1,6 +1,7 @@
 <?php $username = $this->session->userdata('uname'); ?>
 
 
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -221,9 +222,9 @@
 			</div>
 				<div class="drop-navigation drop-navigation">
 				  <ul class="nav nav-sidebar">
-					<li class="active"><a href="index.html" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+					<li class="active"><a href="<?php echo base_url(); ?>/index.php/home/view" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
 					<!--<li><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>History</a></li> -->
-					<li><a href="movies.html" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Videos</a></li>
+					<li><a href="<?php echo base_url(); ?>/index.php/singleencoded/view" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Premium Content</a></li>
 					<!--<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Movies<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
 						<ul class="cl-effect-2">
 							<li><a href="movies.html">English</a></li>                                             
