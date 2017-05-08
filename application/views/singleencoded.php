@@ -4,6 +4,14 @@
 			<div class="show-top-grids">
 				<div class="col-sm-8 single-left">
 					<div class="song">
+
+
+						<?php if ( $premium == 0) { ?>
+							<a href="<?php echo base_url(); ?>/index.php/payment/view" class="btn btn-primary btn-sm">Buy Premium </a>
+						<?php } else { ?> 
+						 <?php } ?>
+
+
 						<div class="song-info">
 							<h3>Etiam molestie nisl eget consequat pharetra</h3>	
 					</div>
