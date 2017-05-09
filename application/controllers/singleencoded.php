@@ -7,7 +7,12 @@ class singleencoded extends CI_Controller
 		 $this->load->view('includes/header');
 		 $this->load->view('includes/menu');
 		 $this->load->view('singleencoded');
-		 $this->load->view('includes/ads');
+
+		$filename = 'ads.php'; 
+	    if ( file_exists('application/views/includes/' . $filename) ){ 
+    					$this->load->view('includes/'.$filename);  
+		} else{ } 
+
 		 $this->load->view('includes/footer');
 	}
 

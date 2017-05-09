@@ -23,11 +23,13 @@
 			<div class="header-top-right">
 				
 				<div class="signin">
-  					  <?php if (isset($username)){ ?>
-  					  		<h5 class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></h5>
-  					  <?php } else { ?>
-							<a href="<?php echo base_url(); ?>/index.php/signup/index" class="">Sign Up</a>
-					  <?php } ?>
+				
+				<!-- INCLUDE USERS -->
+				<?php $filename = 'menu_usermg.php'; ?>
+				<?php if ( file_exists('application/views/includes/' . $filename) ){ ?>
+    			<?php	$this->load->view('includes/'.$filename);  ?>
+				<?php  } else{ } ?>
+			
 
 					
 					<!-- pop-up-box -->
@@ -171,14 +173,7 @@
 											});
 									</script>	
 				</div>
-				<div class="signin">
-
-					<?php if (isset($username)){ ?>
-						<a href="<?php echo base_url(); ?>/index.php/profile/logout" class="">Logout</a>
-  					  <?php } else { ?>
-  					  <a href="<?php echo base_url(); ?>/index.php/login/index" class="">login</a>
-					  <?php } ?>
-					
+			
 					<div id="small-dialog" class="mfp-hide">
 						<h3>Login</h3>
 						<div class="social-sits">
