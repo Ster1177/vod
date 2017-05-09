@@ -2,7 +2,15 @@
 
 
 	<?php if ( $premium == 0 || $premium == null ) { ?>
-							<a href="<?php echo base_url(); ?>/index.php/payment/view" class="btn btn-primary btn-sm">Buy Premium </a>
+
+							<?php $filename = 'payment.php'; ?>
+							<?php if ( file_exists('application/views/' . $filename) ){ ?>
+    						  	<a href="<?php echo base_url(); ?>/index.php/payment/view" class="btn btn-primary btn-sm">Buy Premium </a>
+							<?php  } else{	} ?>
+                            
+
+
+
 						<?php } else { ?> 
 						 <?php } ?>
 
