@@ -22,8 +22,8 @@
 
 
 
-<h2> Select which files you want to include in the zip-file</h2>
-<form action="download.php"" method="post">
+<h2> Deployment menu </h2>
+<form action="copy.php"" method="post">
 
 
 <label><input type="checkbox" name="usermsg" value="true" checked="checked" class="radio" />User Management</label>
@@ -37,7 +37,7 @@
 <label><input type="checkbox" name="payment" value="true"/> Payment </label>
  
  
-</label><br />
+<br />
 <input type="submit" name="submit" value="Submit" >
 </form>
 

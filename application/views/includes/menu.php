@@ -1,4 +1,4 @@
-<?php $username = $this->session->userdata('uname'); ?>
+
 
 
 
@@ -218,14 +218,16 @@
 				<div class="drop-navigation drop-navigation">
 				  <ul class="nav nav-sidebar">
 					<li class="active"><a href="<?php echo base_url(); ?>/index.php/home/view" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-					<!--<li><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>History</a></li> -->
-					<li><a href="<?php echo base_url(); ?>/index.php/singleencoded/view" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Premium Content</a></li>
-					<!--<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Movies<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-						<ul class="cl-effect-2">
-							<li><a href="movies.html">English</a></li>                                             
-							<li><a href="movies.html">Chinese</a></li>
-							<li><a href="movies.html">Hindi</a></li> 
-						</ul> -->
+					
+					<!-- IF PREMIMUM MODEL  -->
+
+				<?php $encoded = 'singleencoded.php'; ?>
+				<?php if ( file_exists('application/views/' . $encoded) ){ ?>
+    				<?php	$this->load->view('includes/premium_button.php');  ?>
+				<?php  } else{ } ?>
+
+					
+				
 						<!-- script-for-menu -->
 						<script>
 							$( "li a.menu1" ).click(function() {
