@@ -1,11 +1,16 @@
+
+<?php include 'header.php';?>
+
+
 <?php
 
+    error_reporting(0);
     $dependencies = TRUE;
     $permissions = 0755;
 
-    print_r ($_POST['usermsg']);
+    //print_r ($_POST['usermsg']);
 
-    print_r ($_POST['ads']);
+    //print_r ($_POST['ads']);
 
 
 function xcopy($source, $dest, $permissions)
@@ -66,37 +71,43 @@ function Delete($path)
 }
 //Delete files
 Delete('D:\xampp\htdocs\modularvod\application');
-//Copy common
-
-xcopy('D:\xampp\htdocs\codeign\application' , 'D:\xampp\htdocs\modularvod\application', $permissions);
-
-
 
 
 //Premium requires user management
 if( !isset($_POST['usermsg'])  && isset($_POST['premium']))  {
-    echo "Premium module requires User Managent module\r\n";
+    echo '<div class="alert alert-danger">
+                <strong>Warning!</strong>"Premium module requires User Managent module".
+          </div>';
     $dependencies = FALSE;
 }
 
 
 //Premium requires ads or encrypted video 
 if(!isset($_POST['ads']) &&  !isset($_POST['encoded'])  && isset($_POST['premium'])) {
-    echo "Premium requires Advertisement or Encoded Video modules\r\n";
+
+    echo '<div class="alert alert-danger">
+                <strong>Warning!</strong>"Premium requires Advertisement or Encoded Video modules".
+          </div>';
     $dependencies = FALSE;
 }
 
 //Payment requires premium
 if( isset($_POST['payment'])  && !isset($_POST['premium']))  {
-    echo "Payment requires Premium\r\n";
+     echo '<div class="alert alert-danger">
+                <strong>Warning!</strong>"Payment requires Premium".
+          </div>';
     $dependencies = FALSE;
 }
 
 //Go back if dependencies Error
 if($dependencies == FALSE) {
-    echo "ERRRORRRRRR\r\n";
+    //echo "ERRRORRRRRR\r\n";
+    echo '<a href="index.php" class="btn btn-primary">Back</a>';
     exit();
 }
+
+//Copy common
+xcopy('D:\xampp\htdocs\codeign\application' , 'D:\xampp\htdocs\modularvod\application', $permissions);
 
 
 //No User module
@@ -137,4 +148,12 @@ if (!isset($_POST['payment'])) {
     unlink('D:\xampp\htdocs\modularvod\application\views\payment.php');
 }
 
+echo '<div class="alert alert-success">
+                <strong>Success!</strong>"Open your solution".
+          </div>';
+          echo '<a href="index.php" class="btn btn-primary">Back</a>';
+
 ?>
+
+
+<?php include 'footer.php';?>
