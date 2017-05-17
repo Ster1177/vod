@@ -44,21 +44,14 @@
 </div>
 
 <div>
-	
 	<div class="alert alert-warning alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Warning!</strong> Premium module requires User Management module.
-</div>
-
-<div class="alert alert-warning alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Warning!</strong> Payment module requires the Premium module.
-</div>
-
-<div class="alert alert-info alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Info!</strong> Premium module is redundant if Advertisement and Encripted Video modules are not included.
-</div>
+	  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	  <h4 class="alert-heading">Warning!</h4>
+	  <p>Premium module requires User Management module.</p>
+	  <p class="mb-0">Payment module requires Premium module.</p>
+	  <p class="mb-0">If no components are selected you get an application with only basic streaming service!</p>
+	  <p class="mb-0"> Premium module is redundant if Advertisement and Encripted Video modules are not included.</p>
+	</div>
 </div>
 
 <?php include 'footer.php';?>
