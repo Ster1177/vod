@@ -1,1 +1,1 @@
-<li><a href="<?php echo base_url(); ?>/index.php/singleencoded/view" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Premium Content</a></li>
+<li><a href="<?php echo base_url(); ?>/index.php/singleencoded/view" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Extra Content</a></li>

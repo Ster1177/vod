@@ -22,14 +22,14 @@
 
 					</div>
 					<div class="song-grid-right">
-						<div class="share">
+						<!--<div class="share">
 							<h5>Share this</h5>
 							<ul>
 								<li><a href="#" class="icon fb-icon">Facebook</a></li>
 								<li><a href="#" class="icon comment-icon">Comments</a></li>
 								<li class="view">200 Views</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<div class="clearfix"> </div>
 					<div class="published">
